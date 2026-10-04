@@ -1,0 +1,27 @@
+baseURL = "https://davidplanella.org/"
+title = "David Planella"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+[languages.en]
+  label = "English"
+  weight = 1
+[languages.ca]
+  label = "Català"
+  weight = 2
+
+# Same URLs as the old Ghost blog: /<slug>/ and /tag/<slug>/
+[permalinks.page]
+  posts = "/:slug/"
+[permalinks.term]
+  tags = "/tag/:slug/"
+[permalinks.taxonomy]
+  tags = "/tag/"
+
+[taxonomies]
+  tag = "tags"
+
+# Converted posts keep some HTML (tables, figures, video embeds).
+[markup.goldmark.renderer]
+  unsafe = true
