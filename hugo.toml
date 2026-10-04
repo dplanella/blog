@@ -27,6 +27,11 @@ enableRobotsTXT = true
 [markup.goldmark.renderer]
   unsafe = true
 
+# Blowfish's search reads index.json, which only the JSON output builds.
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
+  enableSearch = true
   homepage = { layout = "card", showRecent = true, showRecentItems = 9, showMoreLink = true, cardView = true }
   list = { cardView = true }
