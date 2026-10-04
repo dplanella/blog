@@ -1,6 +1,6 @@
 # davidplanella.org
 
-Hugo source of the blog.
+Hugo source of the blog. Theme: Blowfish (git submodule, pinned to a release).
 
 Build locally with Hugo extended 0.166:
 

@@ -1,5 +1,6 @@
 baseURL = "https://davidplanella.org/"
 title = "David Planella"
+theme = "blowfish"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
@@ -25,3 +26,7 @@ enableRobotsTXT = true
 # Converted posts keep some HTML (tables, figures, video embeds).
 [markup.goldmark.renderer]
   unsafe = true
+
+[params]
+  homepage = { layout = "card", showRecent = true, showRecentItems = 9, showMoreLink = true, cardView = true }
+  list = { cardView = true }

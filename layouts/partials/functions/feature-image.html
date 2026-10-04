@@ -1,0 +1,10 @@
+{{/* Blowfish override: posts store their feature image in Hugo's standard
+   `images` front matter key; Blowfish reads only `featureimage`. */}}
+{{ $featureImage := .Params.featureimage }}
+{{ if not $featureImage }}{{ with .Params.images }}{{ $featureImage = index . 0 }}{{ end }}{{ end }}
+{{ if not $featureImage }}
+  {{ range .Translations }}
+    {{ with .Params.featureimage }}{{ $featureImage = . }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ return $featureImage }}
