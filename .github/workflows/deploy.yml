@@ -1,0 +1,52 @@
+# Builds the site on every push to main and deploys it to the server.
+# A failed build changes nothing on the server.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  HUGO_VERSION: 0.166.0
+  HUGO_SHA256: 0e39b901e3f919f1daae05c8ff64f0c14c8a348ef46886d63f8e6d1bb2653885
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Holds the deploy key and the server's host key as environment secrets.
+    environment: production
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          submodules: true
+
+      - name: Install Hugo
+        run: |
+          f=hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz
+          curl -sSfLO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/$f"
+          echo "$HUGO_SHA256  $f" | sha256sum -c -
+          tar -xzf "$f" hugo
+          sudo mv hugo /usr/local/bin/
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/deploy
+          tar -czf - -C public . \
+            | ssh -i ~/.ssh/deploy -o IdentitiesOnly=yes blog@141.94.204.108 "deploy blog $GITHUB_SHA"
