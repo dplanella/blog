@@ -1,6 +1,8 @@
 ---
 title: "Reunió de l'equip de traducció de l'Ubuntu"
 slug: "reunio-de-lequip-de-traduccio-de-lubuntu"
+aliases: ["../../reunio-de-lequip-de-traduccio-de-lubuntu/"]
+commentsPath: "/reunio-de-lequip-de-traduccio-de-lubuntu/"
 date: 2009-09-08T19:57:29.000Z
 tags: ["translations", "ubuntu"]
 ---

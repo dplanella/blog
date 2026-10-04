@@ -1,6 +1,8 @@
 ---
 title: "Marató pencaire de Softcatalà demà al Citilab"
 slug: "marato-pencaire-de-softcatala-dema-al-citilab"
+aliases: ["../../marato-pencaire-de-softcatala-dema-al-citilab/"]
+commentsPath: "/marato-pencaire-de-softcatala-dema-al-citilab/"
 date: 2010-06-18T19:31:07.000Z
 tags: ["softcatala", "traduccio"]
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Escola d'aplicacions Ubuntu a Barcelona"
 slug: "escola-aplicacions-ubuntu-barcelona"
+aliases: ["../../escola-aplicacions-ubuntu-barcelona/"]
+commentsPath: "/escola-aplicacions-ubuntu-barcelona/"
 date: 2014-02-06T05:11:00.000Z
 description: "Ubuntu, el sistema operatiu lliure més popular i innovador en núvols computacionals, en servidors i en milions d'ordinadors personals, entra al món dels dispositius mòbils."
 tags: ["ubuntu", "app-development", "barcelona", "app-dev-schools"]

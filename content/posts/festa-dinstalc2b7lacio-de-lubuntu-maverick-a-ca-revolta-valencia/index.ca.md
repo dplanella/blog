@@ -1,6 +1,8 @@
 ---
 title: "Festa d’instal·lació de l'Ubuntu Maverick a Ca Revolta (València)"
 slug: "festa-dinstalc2b7lacio-de-lubuntu-maverick-a-ca-revolta-valencia"
+aliases: ["../../festa-dinstalc2b7lacio-de-lubuntu-maverick-a-ca-revolta-valencia/"]
+commentsPath: "/festa-dinstalc2b7lacio-de-lubuntu-maverick-a-ca-revolta-valencia/"
 date: 2010-11-17T20:55:01.000Z
 tags: ["ca-revolta", "catala-2", "softcatala", "softvalencia", "ubuntu", "valencia"]
 ---

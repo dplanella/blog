@@ -1,6 +1,8 @@
 ---
 title: "Ja es pot traduir l'Ubuntu Natty Narwhal"
 slug: "ja-es-pot-traduir-lubuntu-natty-narwhal"
+aliases: ["../../ja-es-pot-traduir-lubuntu-natty-narwhal/"]
+commentsPath: "/ja-es-pot-traduir-lubuntu-natty-narwhal/"
 date: 2010-12-03T20:56:47.000Z
 tags: ["natty", "traduccio", "ubuntu"]
 ---

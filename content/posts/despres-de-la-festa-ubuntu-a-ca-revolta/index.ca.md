@@ -1,6 +1,8 @@
 ---
 title: "Després de la festa Ubuntu a Ca Revolta"
 slug: "despres-de-la-festa-ubuntu-a-ca-revolta"
+aliases: ["../../despres-de-la-festa-ubuntu-a-ca-revolta/"]
+commentsPath: "/despres-de-la-festa-ubuntu-a-ca-revolta/"
 date: 2010-11-25T10:16:22.000Z
 tags: ["ca-revolta", "festa", "maverick", "softvalencia", "valencia"]
 ---
