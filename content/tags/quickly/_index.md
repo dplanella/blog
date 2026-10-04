@@ -1,0 +1,4 @@
+---
+title: "Quickly"
+slug: "quickly"
+---

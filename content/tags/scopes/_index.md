@@ -1,0 +1,4 @@
+---
+title: "Scopes"
+slug: "scopes"
+---

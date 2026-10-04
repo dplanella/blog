@@ -1,0 +1,4 @@
+---
+title: "GSoC"
+slug: "gsoc"
+---

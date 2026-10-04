@@ -1,0 +1,4 @@
+---
+title: "qr"
+slug: "qr"
+---

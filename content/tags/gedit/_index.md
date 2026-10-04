@@ -1,0 +1,4 @@
+---
+title: "Gedit"
+slug: "gedit"
+---
