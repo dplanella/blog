@@ -60,10 +60,21 @@ def clean_html(post, report):
     for s in body.find_all("script"):
         report["scripts"].append((slug, s.get("src") or s.get_text()[:80]))
         s.decompose()
+    embeds = []
     for f in body.find_all("iframe"):
         host = urlsplit(f.get("src", "")).netloc
         if host in IFRAME_HOSTS:
             report["iframes"][host] += 1
+            # pandoc drops iframes, so each one passes through as a placeholder
+            # paragraph and is put back as raw HTML after conversion.
+            attrs = {k: v for k, v in f.attrs.items()
+                     if k in ("src", "width", "height", "title", "allow", "allowfullscreen")}
+            attrs["src"] = clean_url(attrs["src"])
+            iframe = soup.new_tag("iframe", attrs=attrs)
+            embeds.append(str(iframe))
+            p = soup.new_tag("p")
+            p.string = f"GHOSTEMBED{len(embeds) - 1}"
+            f.replace_with(p)
         else:
             report["iframes_removed"].append((slug, f.get("src", "")))
             f.decompose()
@@ -79,7 +90,7 @@ def clean_html(post, report):
             if tag.name == "img":
                 src = tag["src"]
                 (report["images_local"] if src.startswith("/") else report["images_remote"])[src] += 1
-    return "".join(str(c) for c in body.contents)
+    return "".join(str(c) for c in body.contents), embeds
 
 
 def yaml_str(value):
@@ -122,8 +133,12 @@ def main(src, out):
     tag_urls = {}
     bad = []
     for post in posts:
-        html = clean_html(post, report)
+        html, embeds = clean_html(post, report)
         md = pypandoc.convert_text(html, "gfm", format="html", extra_args=["--wrap=none", "--sandbox"])
+        for i, iframe in enumerate(embeds):
+            if md.count(f"GHOSTEMBED{i}") != 1:
+                bad.append((post["slug"], f"embed {i} lost in conversion"))
+            md = md.replace(f"GHOSTEMBED{i}", iframe)
         text = front_matter(post) + md
         if FORBIDDEN.search(text):
             bad.append((post["slug"], FORBIDDEN.search(text).group(0)))

@@ -9,6 +9,8 @@ images: ["/content/images/2021/07/D0okAlSWwAAtRYk.jpeg"]
 
 ## Slides
 
+<iframe allowfullscreen="true" height="450" src="https://docs.google.com/presentation/d/e/2PACX-1vRqdNgcFisw-rUa5V47f9SKDNUxyd8kJAta9PcHbWZLUjyVrqXPYrEeHR_sK3cuzR_5CDFipkPzID1V/embed?start=false&amp;loop=false&amp;delayms=3000" width="720"></iframe>
+
 ## Reactions
 
 <figure class="kg-card kg-embed-card">

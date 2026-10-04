@@ -6,4 +6,6 @@ description: "Un resum de les funcions que fan de l'Ubuntu 11.10 un sistema oper
 tags: ["ubuntu", "11-10"]
 ---
 
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/UbobvBeQ9ic" width="560"></iframe>
+
 *Agraïments a l'Iain Farrell per proporcionar [el guió i les plantilles d'elements multimèdia](http://bit.ly/WUP6No) en els quals s'ha basat la versió en català del vídeo*

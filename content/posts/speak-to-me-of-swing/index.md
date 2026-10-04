@@ -8,6 +8,8 @@ images: ["/content/images/2017/10/speak-to-me-of-swing.jpg"]
 
 Over an hour of timeless old and new tunes to dance swing to, spanning from 1924 to 2013.
 
+<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=1&amp;feed=%2Fdplanella%2Fspeak-of-swing-to-me%2F" width="720"></iframe>
+
 \
 
 Celebrating the new year with a selection of the favourite songs from various 2013 DJ sessions at the SwingKultur ballroom, Cafe Stella, the Erdgeschoss club in Stuttgart and the Schlosscafé in Tübingen.

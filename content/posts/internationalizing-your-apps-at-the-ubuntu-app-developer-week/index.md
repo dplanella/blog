@@ -14,6 +14,10 @@ If you've got any questions on i18n or in Ubuntu app development in general, fee
 
 ## The video
 
+<iframe allowfullscreen="" height="309" src="//www.youtube.com/embed/ZagGttXuASs?rel=0" width="549"></iframe>
+
 ## The slides
+
+<iframe allowfullscreen="true" height="440" src="https://docs.google.com/presentation/d/10yEwPaeab__QHgJsIkTHNcdxt1lyPtl74kcYBpcK53c/embed?start=false&amp;loop=false&amp;delayms=3000" width="549"></iframe>
 
 Enjoy!

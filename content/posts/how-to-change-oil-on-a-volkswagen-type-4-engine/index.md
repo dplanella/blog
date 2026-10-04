@@ -179,6 +179,8 @@ To better understand this, I recommend reading the [Lubrication notes from the I
 
 Here's a collection of great external resources for further reading or watching on the subjects of oil change and selection.
 
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/cOVR0L0Dub4?rel=0&amp;start=11" width="560"></iframe>
+
 - [Changing the engine oil](https://www.thesamba.com/vw/archives/manuals/79bus/59.jpg), from the 1979 VW Type 2 Owner's Manual
 - [Oil change](http://www.type2.com/bartnik/oil.htm), by Sean Bartnik
 - [Oil selection](http://www.ratwell.com/technical/OilSelection.html), by Richard Atwell

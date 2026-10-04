@@ -8,6 +8,8 @@ images: ["/content/images/2017/10/cassidy-new-orleans-swing-kids-at-spirit-swing
 
 Two hours of swing music for lindy hoppers from my first session ever as swing DJ, on the Monday Jam night at Spirit Swing House in Valencia. It was lots of fun, hope you enjoy it too!
 
+<iframe height="400" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fdplanella%2Fmonday-night-swing-session-1-spirit%2F&amp;light=1" width="720"></iframe>
+
 \
 
 Also on [8tracks](http://8tracks.com/david-planella/monday-night-swing-session-1-spirit#smart_id=dj:2565862).

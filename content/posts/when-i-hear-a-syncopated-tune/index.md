@@ -8,6 +8,8 @@ images: ["/content/images/2017/10/charleston.jpg"]
 
 Eight light, upbeat swing tunes including Squirrel Nut Zippers, Red Hook Ramblers, The Cangelosi Cards and more.
 
+<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=1&amp;hide_artwork=0&amp;feed=%2Fdplanella%2Fwhen-i-hear-a-syncopated-tune%2F" width="720"></iframe>
+
 \
 
 ### Track list
