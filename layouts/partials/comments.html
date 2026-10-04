@@ -5,6 +5,7 @@
     site_id: "davidplanella",
     url: {{ printf "https://davidplanella.org%s" (.Params.commentsPath | default .RelPermalink) }},
     page_title: {{ .Title }},
+    locale: navigator.language || "en",
     theme: document.documentElement.classList.contains("dark") ? "dark" : "light",
     no_footer: true
   };
