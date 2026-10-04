@@ -35,3 +35,5 @@ enableRobotsTXT = true
   enableSearch = true
   homepage = { layout = "card", showRecent = true, showRecentItems = 9, showMoreLink = true, cardView = true }
   list = { cardView = true }
+  # Remark42, see layouts/partials/comments.html
+  article = { showComments = true }
